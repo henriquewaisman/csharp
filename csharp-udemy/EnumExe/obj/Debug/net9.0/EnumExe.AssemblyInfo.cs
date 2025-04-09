@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EnumExe")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ce1d1f77e3333403f2c5bb66c93a50fc18dea9a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+236802f6a71fae936e48af07102fdbce8f89f59d")]
 [assembly: System.Reflection.AssemblyProductAttribute("EnumExe")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EnumExe")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
