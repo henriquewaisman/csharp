@@ -1,3 +1,5 @@
+using System.Data;
+using System.Diagnostics.Contracts;
 using EnumExe.Enum;
 
 namespace EnumExe.Models
@@ -7,8 +9,9 @@ namespace EnumExe.Models
         public string Name { get; protected set; }
         public WorkerLevel Level { get; protected set; }
         public double BaseSalary { get; protected set; }
-        public Department Department { get; set; }
-        
+        public List<Department> Departments { get; set; }
+        public List<HourContract> Contracts { get; set; }
+
         public Worker(string name, WorkerLevel level, double baseSalary)
         {
             SetName(name);
@@ -44,6 +47,32 @@ namespace EnumExe.Models
                 throw new Exception("Workers base salary can not less than 0.");
             }
             BaseSalary = baseSalary;
+        }
+
+        public void AddContract(HourContract contract)
+        {
+            Contracts.Add(contract);
+        }
+        public void RemoveContract(HourContract contract)
+        {
+            Contracts.Remove(contract);
+        }
+        public double CheckIncome(int year, int month)
+        {
+            double income = BaseSalary;
+
+            if(Contracts == null)
+            {
+                return 0;
+            }
+            foreach(HourContract contract in Contracts)
+            {
+                if(contract.Date.Year == year && contract.Date.Month == month)
+                {
+                    income += contract.ValuePerHour * contract.Hours;
+                }
+            }
+            return income;
         }
     }
 }
