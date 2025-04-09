@@ -7,6 +7,7 @@ namespace EnumExe.Models
         public string Name { get; protected set; }
         public WorkerLevel Level { get; protected set; }
         public double BaseSalary { get; protected set; }
+        public Department Department { get; set; }
         
         public Worker(string name, WorkerLevel level, double baseSalary)
         {
