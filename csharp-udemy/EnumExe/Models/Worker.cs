@@ -9,14 +9,16 @@ namespace EnumExe.Models
         public string Name { get; protected set; }
         public WorkerLevel Level { get; protected set; }
         public double BaseSalary { get; protected set; }
-        public List<Department> Departments { get; set; }
+        public Department Department { get; set; }
         public List<HourContract> Contracts { get; set; }
 
-        public Worker(string name, WorkerLevel level, double baseSalary)
+        public Worker(string name, WorkerLevel level, double baseSalary, Department departament)
         {
             SetName(name);
             SetLevel(level);
             SetBaseSalary(baseSalary);
+            SetDepartament(departament);
+            Contracts = new List<HourContract>();
         }
 
         public void SetName(string name)
@@ -48,7 +50,14 @@ namespace EnumExe.Models
             }
             BaseSalary = baseSalary;
         }
-
+        public void SetDepartament(Department departament)
+        {
+            if(departament == null)
+            {
+                throw new Exception("Department can not be empty.");
+            }
+            Department = departament;
+        }
         public void AddContract(HourContract contract)
         {
             Contracts.Add(contract);

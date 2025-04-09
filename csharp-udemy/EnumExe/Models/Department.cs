@@ -4,6 +4,11 @@ namespace EnumExe.Models
     {
         public string Name { get; protected set; }
 
+        public Department(string name)
+        {
+            SetName(name);
+        }
+
         public void SetName(string name)
         {
             if(string.IsNullOrWhiteSpace(name))

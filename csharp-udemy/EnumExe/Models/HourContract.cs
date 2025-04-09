@@ -1,3 +1,5 @@
+using System.Security.Cryptography.X509Certificates;
+
 namespace EnumExe.Models
 {
     public class HourContract
@@ -5,7 +7,6 @@ namespace EnumExe.Models
         public DateTime Date { get; protected set; }
         public double ValuePerHour { get; protected set; }
         public int Hours { get; protected set; }
-
         public HourContract(DateTime date, double valuePerHour, int hours)
         {
             SetDate(date);
@@ -35,6 +36,11 @@ namespace EnumExe.Models
                 throw new Exception("Number of hours cannot be less then 0.");
             }
             Hours = hours;
+        }
+
+        public double TotalValue()
+        {
+            return Hours * ValuePerHour;
         }
     }
 }
