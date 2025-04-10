@@ -1,0 +1,15 @@
+C:\dev\csharp\csharp-udemy\Heritage\bin\Debug\net9.0\Heritage.exe
+C:\dev\csharp\csharp-udemy\Heritage\bin\Debug\net9.0\Heritage.deps.json
+C:\dev\csharp\csharp-udemy\Heritage\bin\Debug\net9.0\Heritage.runtimeconfig.json
+C:\dev\csharp\csharp-udemy\Heritage\bin\Debug\net9.0\Heritage.dll
+C:\dev\csharp\csharp-udemy\Heritage\bin\Debug\net9.0\Heritage.pdb
+C:\dev\csharp\csharp-udemy\Heritage\obj\Debug\net9.0\Heritage.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\csharp\csharp-udemy\Heritage\obj\Debug\net9.0\Heritage.AssemblyInfoInputs.cache
+C:\dev\csharp\csharp-udemy\Heritage\obj\Debug\net9.0\Heritage.AssemblyInfo.cs
+C:\dev\csharp\csharp-udemy\Heritage\obj\Debug\net9.0\Heritage.csproj.CoreCompileInputs.cache
+C:\dev\csharp\csharp-udemy\Heritage\obj\Debug\net9.0\Heritage.sourcelink.json
+C:\dev\csharp\csharp-udemy\Heritage\obj\Debug\net9.0\Heritage.dll
+C:\dev\csharp\csharp-udemy\Heritage\obj\Debug\net9.0\refint\Heritage.dll
+C:\dev\csharp\csharp-udemy\Heritage\obj\Debug\net9.0\Heritage.pdb
+C:\dev\csharp\csharp-udemy\Heritage\obj\Debug\net9.0\Heritage.genruntimeconfig.cache
+C:\dev\csharp\csharp-udemy\Heritage\obj\Debug\net9.0\ref\Heritage.dll

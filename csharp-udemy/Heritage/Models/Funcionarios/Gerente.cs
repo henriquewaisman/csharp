@@ -1,4 +1,4 @@
-namespace Heritage.Models
+namespace Heritage.Models.Funcionarios
 {
     public class Gerente : Funcionario
     {
