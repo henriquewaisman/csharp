@@ -1,5 +1,6 @@
 ﻿using Heritage.Models.Funcionarios;
 using Heritage.Models.Pessoa;
+using Heritage.Models.Veiculos;
 
 namespace Program
 {
@@ -18,6 +19,12 @@ namespace Program
 
             pessoa.Apresentar();
             aluno.Apresentar();
+        
+            Carro carro = new Carro("Honda", "Civic", 2020, 4);
+            Moto moto = new Moto("Honda", "Hornet", 2018, 1000);
+
+            carro.ExibirInfo();
+            moto.ExibirInfo();
         }
     }
 }
