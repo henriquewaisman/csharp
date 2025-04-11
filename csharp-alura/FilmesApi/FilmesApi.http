@@ -1,4 +1,4 @@
-@FilmesApi_HostAddress = http://localhost:5020
+@FilmesApi_HostAddress = http://localhost:5188
 
 GET {{FilmesApi_HostAddress}}/weatherforecast/
 Accept: application/json
