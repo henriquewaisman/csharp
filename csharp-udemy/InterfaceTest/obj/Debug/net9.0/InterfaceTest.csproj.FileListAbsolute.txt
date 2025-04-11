@@ -1,0 +1,15 @@
+C:\dev\csharp\csharp-udemy\InterfaceTest\bin\Debug\net9.0\InterfaceTest.exe
+C:\dev\csharp\csharp-udemy\InterfaceTest\bin\Debug\net9.0\InterfaceTest.deps.json
+C:\dev\csharp\csharp-udemy\InterfaceTest\bin\Debug\net9.0\InterfaceTest.runtimeconfig.json
+C:\dev\csharp\csharp-udemy\InterfaceTest\bin\Debug\net9.0\InterfaceTest.dll
+C:\dev\csharp\csharp-udemy\InterfaceTest\bin\Debug\net9.0\InterfaceTest.pdb
+C:\dev\csharp\csharp-udemy\InterfaceTest\obj\Debug\net9.0\InterfaceTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\csharp\csharp-udemy\InterfaceTest\obj\Debug\net9.0\InterfaceTest.AssemblyInfoInputs.cache
+C:\dev\csharp\csharp-udemy\InterfaceTest\obj\Debug\net9.0\InterfaceTest.AssemblyInfo.cs
+C:\dev\csharp\csharp-udemy\InterfaceTest\obj\Debug\net9.0\InterfaceTest.csproj.CoreCompileInputs.cache
+C:\dev\csharp\csharp-udemy\InterfaceTest\obj\Debug\net9.0\InterfaceTest.sourcelink.json
+C:\dev\csharp\csharp-udemy\InterfaceTest\obj\Debug\net9.0\InterfaceTest.dll
+C:\dev\csharp\csharp-udemy\InterfaceTest\obj\Debug\net9.0\refint\InterfaceTest.dll
+C:\dev\csharp\csharp-udemy\InterfaceTest\obj\Debug\net9.0\InterfaceTest.pdb
+C:\dev\csharp\csharp-udemy\InterfaceTest\obj\Debug\net9.0\InterfaceTest.genruntimeconfig.cache
+C:\dev\csharp\csharp-udemy\InterfaceTest\obj\Debug\net9.0\ref\InterfaceTest.dll
