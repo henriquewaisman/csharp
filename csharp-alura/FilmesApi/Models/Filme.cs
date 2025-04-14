@@ -4,6 +4,7 @@ namespace FilmesApi.Models;
 
 public class Filme
 {
+    public int Id { get; set; }
     [Required]
     [MaxLength(255, ErrorMessage = "Tamanho de título inválido.")]
     public string Titulo { get; set; }
