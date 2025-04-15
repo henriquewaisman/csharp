@@ -1,34 +1,39 @@
 using FilmesApi.Models;
 using Microsoft.AspNetCore.Mvc;
-
 namespace FilmesApi.Controllers;
 
+// Anotações de cabeçalho
 [ApiController]
 [Route("[controller]")]
 public class FilmeController : ControllerBase
 {
-    private static List<Filme> filmes = new List<Filme>(); 
-    private static int id = 0;
+    private static List<Filme> filmes = new List<Filme>(); // Para armazenamento de filmes na classe
+    private static int id = 0; // Id incremental único para cada filme
 
-    [HttpPost]
-    public void AdicionaFilme([FromBody] Filme filme)
+    [HttpPost] // Especificação do método http post
+    public IActionResult AdicionaFilme([FromBody] Filme filme)
     {
-        filme.Id = id;
+        filme.Id = id; // Posta o filme com o Id e incrementa para o próximo
         id ++;
-        filmes.Add(filme);
-        Console.WriteLine(filme.Titulo);
-        Console.WriteLine(filme.Duracao);
+        filmes.Add(filme); // Adiciona o parâmtro à lista estática
+        return CreatedAtAction(nameof(RecuperaFilmePorId), new {id = filme.Id}, filme);
     }
 
-    [HttpGet]
-    public IEnumerable<Filme> RecuperaFilmes()
+    [HttpGet] // Especificação do método http get
+    public IEnumerable<Filme> RecuperaFilmes([FromQuery] int skip = 0,
+    [FromQuery] int take = 50)
     {
-        return filmes;
+        return filmes.Skip(skip).Take(take);
     }
 
-    [HttpGet("{id}")]
-    public Filme? RecuperaFilmePorId(int id)
+    [HttpGet("{id}")] // Especifica o http e o segundo parâmetro da query
+    public IActionResult RecuperaFilmePorId(int id)
     {
-        return filmes.FirstOrDefault(filme => filme.Id == id);
+        var filme = filmes.FirstOrDefault(filme => filme.Id == id);
+        if(filme == null)
+        {
+            return NotFound(filme);
+        }
+        return Ok(filme);
     }
 }
